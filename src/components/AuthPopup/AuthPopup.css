@@ -51,3 +51,10 @@
 .authform p{
     margin: 10px 0px;
 }
+.popup .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    line-height: 0;
+}

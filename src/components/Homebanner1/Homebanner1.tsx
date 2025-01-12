@@ -89,7 +89,11 @@ const Homebanner1 = () => {
                     
                     <span className='textInCircle'>{simplifyFraction(item.value,item.goal)[0] + '/' + simplifyFraction(item.value,item.goal)[1]}</span>
                 </CircularProgress>
-                <button>Show Report <AiOutlineEye/></button>
+                <button
+                onClick={()=>{
+                    window.location.href=`/report/${item.name}`
+                }}
+                >Show Report <AiOutlineEye/></button>
               </div> )
             })
             
